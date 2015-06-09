@@ -1,0 +1,117 @@
+\changetocdepth {4}
+\select@language {brazil}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o}{19}{chapter*.9}
+\contentsline {part}{\partnumberline {I}\MakeTextUppercase {Prepara\IeC {\c c}\IeC {\~a}o do relat\IeC {\'o}rio}}{21}{part.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Resultados de comandos}}{23}{chapter.1}
+\precistoctext {Isto \IeC {\'e} uma sinopse de cap\IeC {\'\i }tulo. A ABNT n\IeC {\~a}o traz nenhuma normatiza\IeC {\c c}\IeC {\~a}o a respeito desse tipo de resumo, que \IeC {\'e} mais comum em romances e livros t\IeC {\'e}cnicos.}
+\contentsline {section}{\numberline {1.1}Codifica\IeC {\c c}\IeC {\~a}o dos arquivos: UTF8}{23}{section.1.1}
+\contentsline {section}{\numberline {1.2}Cita\IeC {\c c}\IeC {\~o}es diretas}{23}{section.1.2}
+\select@language {english}
+\select@language {brazil}
+\contentsline {section}{\numberline {1.3}Notas de rodap\IeC {\'e}}{24}{section.1.3}
+\contentsline {section}{\numberline {1.4}Tabelas}{24}{section.1.4}
+\contentsline {section}{\numberline {1.5}Figuras}{24}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Figuras em \emph {minipages}}{25}{subsection.1.5.1}
+\contentsline {section}{\numberline {1.6}Express\IeC {\~o}es matem\IeC {\'a}ticas}{26}{section.1.6}
+\contentsline {section}{\numberline {1.7}Enumera\IeC {\c c}\IeC {\~o}es: al\IeC {\'\i }neas e subal\IeC {\'\i }neas}{27}{section.1.7}
+\contentsline {section}{\numberline {1.8}Espa\IeC {\c c}amento entre par\IeC {\'a}grafos e linhas}{28}{section.1.8}
+\contentsline {section}{\numberline {1.9}Inclus\IeC {\~a}o de outros arquivos}{29}{section.1.9}
+\contentsline {section}{\numberline {1.10}Compilar o documento \LaTeX }{29}{section.1.10}
+\contentsline {section}{\numberline {1.11}Remiss\IeC {\~o}es internas}{29}{section.1.11}
+\contentsline {section}{\numberline {1.12}Divis\IeC {\~o}es do documento: se\IeC {\c c}\IeC {\~a}o}{30}{section.1.12}
+\contentsline {subsection}{\numberline {1.12.1}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{30}{subsection.1.12.1}
+\contentsline {subsubsection}{\numberline {1.12.1.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{30}{subsubsection.1.12.1.1}
+\contentsline {subsubsection}{\numberline {1.12.1.2}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{30}{subsubsection.1.12.1.2}
+\contentsline {subsection}{\numberline {1.12.2}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{30}{subsection.1.12.2}
+\contentsline {subsubsection}{\numberline {1.12.2.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{30}{subsubsection.1.12.2.1}
+\contentsline {paragraph}{\numberline {1.12.2.1.1}Esta \IeC {\'e} uma subse\IeC {\c c}\IeC {\~a}o de quinto n\IeC {\'\i }vel}{30}{paragraph.1.12.2.1.1}
+\contentsline {paragraph}{\numberline {1.12.2.1.2}Esta \IeC {\'e} outra subse\IeC {\c c}\IeC {\~a}o de quinto n\IeC {\'\i }vel}{31}{paragraph.1.12.2.1.2}
+\contentsline {paragraph}{\numberline {1.12.2.1.3}Este \IeC {\'e} um par\IeC {\'a}grafo numerado}{31}{paragraph.1.12.2.1.3}
+\contentsline {paragraph}{\numberline {1.12.2.1.4}Esta \IeC {\'e} outro par\IeC {\'a}grafo numerado}{31}{paragraph.1.12.2.1.4}
+\contentsline {section}{\numberline {1.13}Este \IeC {\'e} um exemplo de nome de se\IeC {\c c}\IeC {\~a}o longo. Ele deve estar alinhado \IeC {\`a} esquerda e a segunda e demais linhas devem iniciar logo abaixo da primeira palavra da primeira linha}{31}{section.1.13}
+\contentsline {section}{\numberline {1.14}Diferentes idiomas e hifeniza\IeC {\c c}\IeC {\~o}es}{31}{section.1.14}
+\contentsline {section}{\numberline {1.15}Consulte o manual da classe \textsf {abntex2}}{33}{section.1.15}
+\contentsline {section}{\numberline {1.16}Refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{33}{section.1.16}
+\contentsline {subsection}{\numberline {1.16.1}Acentua\IeC {\c c}\IeC {\~a}o de refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{33}{subsection.1.16.1}
+\contentsline {section}{\numberline {1.17}Precisa de ajuda?}{34}{section.1.17}
+\contentsline {section}{\numberline {1.18}Voc\IeC {\^e} pode ajudar?}{34}{section.1.18}
+\contentsline {section}{\numberline {1.19}Quer customizar os modelos do abnT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m 2\ para sua institui\IeC {\c c}\IeC {\~a}o ou universidade?}{34}{section.1.19}
+\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Resultados}}{35}{part.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Lorem ipsum dolor sit amet}}{37}{chapter.2}
+\contentsline {section}{\numberline {2.1}Aliquam vestibulum fringilla lorem}{37}{section.2.1}
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Conclus\IeC {\~a}o}{39}{chapter*.19}
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Refer\^encias}{41}{section*.22}
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Ap\^endices}}{43}{section*.23}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Morbi ultrices rutrum lorem. encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }}{45}{appendix.A}
+\contentsline {section}{\numberline {A.1}Some encoding tests}{45}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{45}{subsection.A.1.1}
+\contentsline {subsubsection}{\numberline {A.1.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{45}{subsubsection.A.1.1.1}
+\contentsline {paragraph}{\numberline {A.1.1.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{45}{paragraph.A.1.1.1.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus}}{47}{appendix.B}
+\contentsline {section}{\numberline {B.1}Some encoding tests}{47}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{47}{subsection.B.1.1}
+\contentsline {subsubsection}{\numberline {B.1.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{47}{subsubsection.B.1.1.1}
+\contentsline {paragraph}{\numberline {B.1.1.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{47}{paragraph.B.1.1.1.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Fusce facilisis lacinia dui}}{49}{appendix.C}
+\contentsline {section}{\numberline {C.1}Some encoding tests}{49}{section.C.1}
+\contentsline {subsection}{\numberline {C.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{49}{subsection.C.1.1}
+\contentsline {subsubsection}{\numberline {C.1.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{49}{subsubsection.C.1.1.1}
+\contentsline {paragraph}{\numberline {C.1.1.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{49}{paragraph.C.1.1.1.1}
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Anexos}}{51}{section*.24}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Quisque libero justo}}{53}{appendix.anexochapback.1}
+\contentsline {section}{\numberline {A.1}Some encoding tests}{53}{section.anexochapback.1.1}
+\contentsline {subsection}{\numberline {A.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{53}{subsection.anexochapback.1.1.1}
+\contentsline {subsubsection}{\numberline {A.1.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{53}{subsubsection.anexochapback.1.1.1.1}
+\contentsline {paragraph}{\numberline {A.1.1.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{53}{paragraph.anexochapback.1.1.1.1.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Nullam elementum urna vel imperdiet}}{55}{appendix.anexochapback.2}
+\contentsline {section}{\numberline {B.1}Some encoding tests}{55}{section.anexochapback.2.1}
+\contentsline {subsection}{\numberline {B.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{55}{subsection.anexochapback.2.1.1}
+\contentsline {subsubsection}{\numberline {B.1.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{55}{subsubsection.anexochapback.2.1.1.1}
+\contentsline {paragraph}{\numberline {B.1.1.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{55}{paragraph.anexochapback.2.1.1.1.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula ac pretium ante justo a nulla curabitur tristique arcu eu metus}}{57}{appendix.anexochapback.3}
+\contentsline {section}{\numberline {C.1}Some encoding tests}{57}{section.anexochapback.3.1}
+\contentsline {subsection}{\numberline {C.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{57}{subsection.anexochapback.3.1.1}
+\contentsline {subsubsection}{\numberline {C.1.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{57}{subsubsection.anexochapback.3.1.1.1}
+\contentsline {paragraph}{\numberline {C.1.1.1.1}encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{} }{57}{paragraph.anexochapback.3.1.1.1.1}
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Exemplo de Formul\IeC {\'a}rio de Identifica\IeC {\c c}\IeC {\~a}o}{59}{appendix*.26}
