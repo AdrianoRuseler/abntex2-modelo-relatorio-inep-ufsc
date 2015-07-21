@@ -161,6 +161,14 @@ baseline: \f@baselineskip{}
 %sssize: \ssf@size{}
  }
 
+% Comandos de dados - Universidade
+\providecommand{\imprimiruniversidade}{}
+\newcommand{\universidade}[1]{\renewcommand{\imprimiruniversidade}{#1}}
+
+% Comandos de dados - Centro
+\providecommand{\imprimircentro}{}
+\newcommand{\centro}[1]{\renewcommand{\imprimircentro}{#1}}
+
 % Comandos de dados - Disciplina
 \providecommand{\imprimirdisciplina}{}
 \newcommand{\disciplina}[1]{\renewcommand{\imprimirdisciplina}{#1}}
@@ -168,6 +176,28 @@ baseline: \f@baselineskip{}
 % Comandos de dados - Professor
 \providecommand{\imprimirprofessor}{}
 \newcommand{\professor}[1]{\renewcommand{\imprimirprofessor}{#1}}
+
+% Comandos de dados - Departamento
+\providecommand{\imprimirdepartamento}{}
+\newcommand{\departamento}[1]{\renewcommand{\imprimirdepartamento}{#1}}
+
+
+
+% Comandos de dados - Programa
+\providecommand{\imprimirprograma}{}
+\newcommand{\programa}[1]{\renewcommand{\imprimirprograma}{#1}}
+
+% Comandos de dados - Curso
+\providecommand{\imprimircurso}{}
+\newcommand{\curso}[1]{\renewcommand{\imprimircurso}{#1}}
+
+% Comandos de dados - Turma
+\providecommand{\imprimirturma}{}
+\newcommand{\turma}[1]{\renewcommand{\imprimirturma}{#1}}
+
+% Comandos de dados - Laboratorio
+\providecommand{\imprimirlaboratorio}{}
+\newcommand{\laboratorio}[1]{\renewcommand{\imprimirlaboratorio}{#1}}
 
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
@@ -179,19 +209,30 @@ baseline: \f@baselineskip{}
 
 % ---
 % Impressão da Capa
-\renewcommand{\imprimircapa}{%
+\newcommand{\imprimircapaUFSC}{%
 	\begin{capa}%
 		\center
 		\includegraphics[width=0.25\textwidth]{Logos/logo-ufsc.pdf}~\\[0.5cm]
 %		\ABNTEXchapterfont\bfseries\large{UNIVERSIDADE FEDERAL DE SANTA CATARINA\\PROGRAMA DE P\'OS--GRADUA\c C\~AO EM ENGENHARIA EL\'ETRICA}
-		\textsc{\LARGE Universidade Federal}\\[0.25cm] % Name of your university/college
-		\textsc{\LARGE de Santa Catarina}\\[0.8cm] % Name of your university/college
-		\textsc{\Large Centro Tecnológico}\\[0.4cm] % Major heading such as course name
-		\textsc{\large Departamento de Engenharia Elétrica e Eletrônica}\\[1.5cm] % Minor heading such as course title
+%		\textsc{\LARGE Universidade Federal}\\[0.25cm] % Name of your university/college
+%		\textsc{\LARGE de Santa Catarina}\\[0.8cm] % Name of your university/college
 
+		\textsc{\LARGE \imprimiruniversidade}\\[0.8cm] % Name of your university/college
+		\textsc{\Large \imprimircentro}\\[0.4cm] % Major heading such as course name
+		\textsc{\large \imprimirdepartamento}\\[0.8cm] % Minor heading such as course title
+		\begin{minipage}{0.2\textwidth}
+			\begin{flushleft} 
+				\includegraphics[width=0.8\textwidth]{Logos/inep.pdf}\\
+			\end{flushleft}
+		\end{minipage}
+		~
+		\begin{minipage}{0.6\textwidth}
+		\center
+		\textsc{\LARGE \imprimirlaboratorio}\\ % Minor heading such as course title
+		\end{minipage}
 		\vfill
 		\noindent\varhrulefill[0.4mm] \\[0.4cm]
-		\ABNTEXchapterfont\bfseries\Large\MakeUppercase{\imprimirtitulo} \\[0.4cm]
+		\ABNTEXchapterfont\bfseries\Large\MakeUppercase{\imprimirtitulo} \\[0.2cm]
 		\noindent\varhrulefill[0.4mm] 
 		\vfill
 
@@ -214,7 +255,7 @@ baseline: \f@baselineskip{}
 
 \renewcommand{\folhaderostocontent}{
 \begin{center}
-{\ABNTEXchapterfont\large UNIVERSIDADE FEDERAL DE SANTA CATARINA\\PROGRAMA DE P\'OS--GRADUA\c C\~AO EM ENGENHARIA EL\'ETRICA}
+{\ABNTEXchapterfont\large \MakeUppercase{\imprimiruniversidade}\\ \MakeUppercase{\imprimirprograma}}
 
     \vspace*{1cm}
 
@@ -260,86 +301,5 @@ baseline: \f@baselineskip{}
 
 
 
-
-
-
-
-
-
-
-
-\newcommand{\imprimefolharosto}{
-
-\begin{center}  % Center everything on the page	
-
-
-%----------------------------------------------------------------------------------------
-%	LOGO SECTION
-%----------------------------------------------------------------------------------------
-
-% Upper part of the page. The '~' is needed because \\
-% only works if a paragraph has started.
-\includegraphics[width=0.25\textwidth]{Logos\logo-ufsc.pdf}~\\[1cm]
-
-
-%----------------------------------------------------------------------------------------
-%	HEADING SECTIONS
-%----------------------------------------------------------------------------------------
-
-\textsc{\LARGE Universidade Federal}\\[0.5cm] % Name of your university/college
-\textsc{\LARGE de Santa Catarina}\\[1.5cm] % Name of your university/college
-\textsc{\Large Centro Tecnológico}\\[0.5cm] % Major heading such as course name
-\textsc{\large Departamento de Engenharia Elétrica e Eletrônica}\\[1.5cm] % Minor heading such as course title
-
-%----------------------------------------------------------------------------------------
-%	TITLE SECTION
-%----------------------------------------------------------------------------------------
-
-\HRule \\[0.4cm]
-{ \Huge \bfseries Plano de Ensino -- EEL7200} \\[0.6cm] % Title of your document
-{ \huge \bfseries  Eletrônica de Potência II -- Laboratório} \\[0.4cm] % Title of your document
-\HRule \\[1.5cm]
-
-%----------------------------------------------------------------------------------------
-%	TOPIC SECTION
-%----------------------------------------------------------------------------------------
-
-{ \Large \bfseries Curso de Graduação em Engenharia Elétrica} \\[1.5cm] % Title of your document
-
-
-%----------------------------------------------------------------------------------------
-%	AUTHOR SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{minipage}{0.5\textwidth}
-	\begin{flushleft} \large
-		\emph{Autor:}\\
-		Prof. Adriano \textsc{Ruseler}, M. Eng. % Your name
-	\end{flushleft}
-\end{minipage}
-~
-\begin{minipage}{0.3\textwidth}
-	\begin{flushright} \large
-		\emph{Semestre:} \\
-		2015/2
-	\end{flushright}
-\end{minipage}\\[3cm]
-
-% If you don't want a supervisor, uncomment the two lines below and remove the section above
-%\Large \emph{Author:}\\
-%John \textsc{Smith}\\[3cm] % Your name
-
-%----------------------------------------------------------------------------------------
-%	DATE SECTION
-%----------------------------------------------------------------------------------------
-
-{\large Florianópolis, \today.}\\[3cm] % Date, change the \today to a set date if you want to be precise
-
-%----------------------------------------------------------------------------------------
-
-\vfill % Fill the rest of the page with whitespace
-\end{center}
-}
-\makeatother
 
 

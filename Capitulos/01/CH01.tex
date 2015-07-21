@@ -412,6 +412,28 @@ Para isso, também estão disponíveis os ambientes:
 
 Para mais informações, consulte \citeonline[p. 47-52 e 135]{memoir}.
 
+
+% ---
+\section{Inclusão de código fonte}\label{sec-codeinsert}
+% ---
+
+\begin{lstlisting}[caption={Leitura dos dados simulados e conversão para estados topológicos.},label={lst:leituradadossim}]
+% Pré definições iniciais
+nsub=3;  % Numero de Submódulos
+nbits=2*nsub; % Numero de bits necessários para representar os estados
+nlevels=2*nsub+1; % Numero total de níveis
+
+% Leitura dos pontos gerados por simulação
+time=data(1,:)'; % extrai vetor de tempo
+PWM=logical(data(2:end,:))'; % Conversão dos pulsos PWM para estados lógicos
+
+% Cria vetor de string binário com os estados correspondentes
+binstates=num2str([PWM(:,1) PWM(:,3) PWM(:,5) PWM(:,7) PWM(:,9) PWM(:,11)]);
+state=fi(bin2dec(binstates),0,nbits,0); % Objeto numérico de ponto-fixo
+
+\end{lstlisting}
+
+
 % ---
 \section{Inclusão de outros arquivos}\label{sec-include}
 % ---

@@ -31,7 +31,7 @@
 \documentclass[
 	% -- opções da classe memoir --
 	12pt,				% tamanho da fonte
-	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	%openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
 	twoside,			% para impressão em verso e anverso. Oposto a oneside
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
@@ -110,6 +110,67 @@
 % CONFIGURAÇÕES DE PACOTES
 % --- 
 
+
+% Definição de cores
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+
+\lstset{ %
+	aboveskip=3mm,
+	belowskip=3mm,
+	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+	basicstyle={\small\ttfamily},        % the size of the fonts that are used for the code
+	breakatwhitespace=true,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=t,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	columns=flexible,
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	frame=tb,                        % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=Matlab,                 % the language of the code
+	morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=none,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{mymauve},     % string literal style
+	tabsize=3,                       % sets default tabsize to 3 spaces
+	texcl=true,						 % Permite o uso de acentuação no código
+	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+%By default, listings does not support multi-byte encoding for source code. The extendedchar option only works for 8-bits encodings such as latin1.
+%
+%To handle UTF-8, you should tell listings how to interpret the special characters by defining them like so
+\lstset{literate=	
+	{á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+	{Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+	{à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+	{À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+	{ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+	{Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+	{â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+	{Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1	 
+	{œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+	{ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
+	{ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+	{€}{{\EUR}}1 {£}{{\pounds}}1 {ã}{{\~a}}1 {õ}{{\~o}}1 {Ã}{{\~A}}1 {Õ}{{\~O}}1	
+}
+
+\renewcommand{\lstlistingname}{Código--fonte }% Listing -> Codigo fonte
+\renewcommand{\lstlistlistingname}{Lista de códigos--fonte}% List of Listings -> Lista de códigos-fonte
+\newlistof{lstlistoflistings}{lol}{\lstlistlistingname}
+
 % ---
 % Configurações do pacote backref
 % Usado sem a opção hyperpageref de backref
@@ -131,7 +192,7 @@
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
 \titulo{Modelo Canônico de Relatórios do INEP com \abnTeX}
-\autor{Nome do Autor 01\\Nome do Autor 02 \\Nome do Autor 03}
+\autor{Nome do Autor 01 \\ Nome do Autor 02 \\ Nome do Autor 03 \\ Nome do Autor 04 \\ Nome do Autor 05}
 \local{Florianópolis, Santa Catarina -- Brasil}
 %\local{Florianópolis}
 \data{\today}
@@ -149,10 +210,19 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % ---
 
 \disciplina{EEL7011 - Eletrônica Básica}
-\professor{Adriano Ruseler}
+\professor{Prof. Nome Sobrenome \\ Prof. Nome Sobrenome}
 
-%\newcommand{\universidade}{Universidade Federal de Santa Catarina (UFSC) \par Centro de Ciências Humanas, Letras e Artes (CCHLA)}
-%\newcommand{\curso}{Geografia}
+\universidade{Universidade Federal de Santa Catarina}
+\centro{Centro Tecnológico}
+\departamento{Departamento de Engenharia Elétrica e Eletrônica}
+\programa{Programa de Pós--graduação em Engenharia Elétrica}
+\curso{Engenharia Elétrica}
+\laboratorio{Instituto de Eletrônica de Potência} 
+\turma{Turma A}
+
+
+%\newcommand{(UFSC) \par Centro de Ciências Humanas, Letras e Artes (CCHLA)}
+
 %\newcommand{\professores}{Nome de Aluno 1; Nome de Aluno 2; Nome de Aluno 3; Nome de Aluno 4; Nome de Aluno 5; Nome de Aluno 6}
 %\newcommand{\disciplina}{Metodologia da Ciência}
 %\newcommand{\tema}{A história da filosofia como desenvolvimento da ideia}
@@ -223,7 +293,8 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % ---
 % Capa
 % ---
-\imprimircapa
+\imprimircapaUFSC  % Aplica o modelo com logo da UFSC
+%\imprimircapa % Aplica o modelo default do pacote abntex2
 % ---
 
 
@@ -232,7 +303,7 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % Folha de rosto
 % (o * indica que haverá a ficha bibliográfica)
 % ---
-\imprimirfolhaderosto*
+\imprimirfolhaderosto
 % ---
 
 % ---
@@ -312,6 +383,14 @@ deve conter:
 
 
 % ---
+% inserir códigos fonte
+% ---
+\pdfbookmark[0]{\lstlistingname}{lol}
+\lstlistoflistings*
+\cleardoublepage
+% ---
+
+% ---
 % inserir lista de abreviaturas e siglas
 % ---
 \input{PreTexto/siglas.tex}
@@ -322,6 +401,8 @@ deve conter:
 % ---
 \input{PreTexto/simbolos.tex}
 % ---
+
+
 
 % ---
 % inserir o sumario
