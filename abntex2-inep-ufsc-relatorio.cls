@@ -27,24 +27,21 @@
 \ProcessOptions\relax
 \LoadClass{abntex2}
 
-\RequirePackage{caption}
-\RequirePackage{layouts}
-
-% Fonte 'Times New Roman'
-\RequirePackage{mathptmx}
-
-\RequirePackage{hyperref}
-
-% Número da última página
-\RequirePackage{lastpage}
 
 \RequirePackage{lmodern}			% Usa a fonte Latin Modern			
 \RequirePackage[T1]{fontenc}		% Selecao de codigos de fonte.
-\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\RequirePackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
 \RequirePackage{color}				% Controle das cores
 \RequirePackage{graphicx}			% Inclusão de gráficos
 \RequirePackage{microtype} 			% para melhorias de justificação
 
+\RequirePackage{caption}
+\RequirePackage{layouts}
+% Fonte 'Times New Roman'
+\RequirePackage{mathptmx}
+\RequirePackage{hyperref}
+% Número da última página
+\RequirePackage{lastpage}
 \RequirePackage{pdfpages}
 \RequirePackage{fancyvrb}
 \RequirePackage{rotating}

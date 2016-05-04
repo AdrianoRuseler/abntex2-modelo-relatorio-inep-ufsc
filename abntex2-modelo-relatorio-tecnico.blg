@@ -1,9 +1,19 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: abntex2-modelo-relatorio-tecnico.aux
-The style file: abntex2-alf.bst
+A level-1 auxiliary file: Capitulos/00/CH00.aux
+A level-1 auxiliary file: Capitulos/01/CH01.aux
+A level-1 auxiliary file: Capitulos/02/CH02.aux
+A level-1 auxiliary file: Capitulos/Concl/Concl.aux
+A level-1 auxiliary file: Apendices/A/APA.aux
+A level-1 auxiliary file: Apendices/B/APB.aux
+A level-1 auxiliary file: Apendices/C/APC.aux
+A level-1 auxiliary file: Anexos/A/ANA.aux
+A level-1 auxiliary file: Anexos/B/ANB.aux
+A level-1 auxiliary file: Anexos/C/ANC.aux
+The style file: abntex2-num.bst
 Database file #1: abntex2-options.bib
 Database file #2: abntex2-modelo-references.bib
 +---------------------------------------------------------+
-| Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
+| Estilo bibliográfico abntex2-num.bst versão v-1.9.2           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
