@@ -31,18 +31,18 @@
 \documentclass[
 	% -- opções da classe memoir --
 	12pt,				% tamanho da fonte
-	%openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
 	twoside,			% para impressão em verso e anverso. Oposto a oneside
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
+	sumario=tradicional,
+%	sumario=abnt-6027-2012, %  soh pode ser usado com memoir v3.6k ou superior
 	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
 	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
 	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
 	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
 	% -- opções do pacote babel --
 	english,			% idioma adicional para hifenização
-	french,				% idioma adicional para hifenização
-	spanish,			% idioma adicional para hifenização
 	brazil,				% o último idioma é o principal do documento
 	]{abntex2-inep-ufsc-relatorio}
 
@@ -50,122 +50,18 @@
 % ---
 % PACOTES
 % ---
-
-% ---
-% Pacotes fundamentais 
-% ---
-\usepackage{lmodern}			% Usa a fonte Latin Modern
-\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
-\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
-\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
-\usepackage{color}				% Controle das cores
-\usepackage{graphicx}			% Inclusão de gráficos
-\usepackage{microtype} 			% para melhorias de justificação
-% ---
-
-% ---
-% Pacotes adicionais, usados no anexo do modelo de folha de identificação
-% ---
-
-\usepackage{pdfpages}
-\usepackage{fancyvrb}
-\usepackage{rotating}
-\usepackage{amsmath}		
-\usepackage{amssymb}
-\usepackage{mathrsfs}
-\usepackage{color}
-\usepackage{pdflscape}
-\usepackage{epstopdf}
-\usepackage{multirow}
-\usepackage{listings}
-\usepackage{url} % Para incluir links
-\usepackage{nomencl} % Pacote necessário para a lista de siglas.
-\usepackage{mathcomp}
-\usepackage{booktabs} % Para Tabelas
-\usepackage{subfig}  % permite ter subfiguras
-\usepackage{float}
-
-\usepackage{siunitx} % A comprehensive (SI) units package
-
-\usepackage{datetime}
-
-\usepackage{rotating} % gives you the possibility to rotate any object of an arbitrary angle. 
-\usepackage{pdflscape} % Rotação de páginas no documento pdf.
-
-	
-% ---
-% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
-% ---
-\usepackage{lipsum}				% para geração de dummy text
-% ---
-
 % ---
 % Pacotes de citações 
 % ---
 
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
-\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+%\usepackage[alf]{abntex2cite}	% Citação alfabética por autor-data [alf]
+\usepackage[num]{abntex2cite} % Citação numérica [num]
+\citebrackets[]
 
 % --- 
 % CONFIGURAÇÕES DE PACOTES
 % --- 
-
-
-% Definição de cores
-\definecolor{mygreen}{rgb}{0,0.6,0}
-\definecolor{mygray}{rgb}{0.5,0.5,0.5}
-\definecolor{mymauve}{rgb}{0.58,0,0.82}
-
-
-\lstset{ %
-	aboveskip=3mm,
-	belowskip=3mm,
-	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
-	basicstyle={\small\ttfamily},        % the size of the fonts that are used for the code
-	breakatwhitespace=true,         % sets if automatic breaks should only happen at whitespace
-	breaklines=true,                 % sets automatic line breaking
-	captionpos=t,                    % sets the caption-position to bottom
-	commentstyle=\color{mygreen},    % comment style
-	columns=flexible,
-	deletekeywords={...},            % if you want to delete keywords from the given language
-	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
-	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
-	frame=tb,                        % adds a frame around the code
-	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-	keywordstyle=\color{blue},       % keyword style
-	language=Matlab,                 % the language of the code
-	morekeywords={*,...},            % if you want to add more keywords to the set
-	numbers=none,                    % where to put the line-numbers; possible values are (none, left, right)
-	numbersep=5pt,                   % how far the line-numbers are from the code
-	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
-	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
-	showstringspaces=false,          % underline spaces within strings only
-	showtabs=false,                  % show tabs within strings adding particular underscores
-	stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
-	stringstyle=\color{mymauve},     % string literal style
-	tabsize=3,                       % sets default tabsize to 3 spaces
-	texcl=true,						 % Permite o uso de acentuação no código
-	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
-}
-
-%By default, listings does not support multi-byte encoding for source code. The extendedchar option only works for 8-bits encodings such as latin1.
-%
-%To handle UTF-8, you should tell listings how to interpret the special characters by defining them like so
-\lstset{literate=	
-	{á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
-	{Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
-	{à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
-	{À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
-	{ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
-	{Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
-	{â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
-	{Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1	 
-	{œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
-	{ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
-	{ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
-	{€}{{\EUR}}1 {£}{{\pounds}}1 {ã}{{\~a}}1 {õ}{{\~o}}1 {Ã}{{\~A}}1 {Õ}{{\~O}}1	
-}
 
 \renewcommand{\lstlistingname}{Código--fonte }% Listing -> Codigo fonte
 \renewcommand{\lstlistlistingname}{Lista de códigos--fonte}% List of Listings -> Lista de códigos-fonte
@@ -191,7 +87,7 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Modelo Canônico de Relatórios do INEP com \abnTeX}
+\titulo{Modelo Canônico de Relatórios técnicos com \abnTeX}
 \autor{Nome do Autor 01 \\ Nome do Autor 02 \\ Nome do Autor 03 \\ Nome do Autor 04 \\ Nome do Autor 05}
 \local{Florianópolis, Santa Catarina -- Brasil}
 %\local{Florianópolis}
@@ -210,32 +106,28 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % ---
 
 
-
-
-\disciplina{EEL7278 - Eletrônica Industrial}
-\professor{Prof. Nome Sobrenome \\ Prof. Nome Sobrenome}
-
 \universidade{Universidade Federal de Santa Catarina}
 \centro{Centro Tecnológico}
 \departamento{Departamento de Engenharia Elétrica e Eletrônica}
 \programa{Programa de Pós--graduação em Engenharia Elétrica}
-\curso{Engenharia Elétrica}
+
 \laboratorio{Instituto de Eletrônica de Potência} 
-\turma{Turma A}
 
-
-%\newcommand{(UFSC) \par Centro de Ciências Humanas, Letras e Artes (CCHLA)}
-
-%\newcommand{\professores}{Nome de Aluno 1; Nome de Aluno 2; Nome de Aluno 3; Nome de Aluno 4; Nome de Aluno 5; Nome de Aluno 6}
-%\newcommand{\disciplina}{Metodologia da Ciência}
-%\newcommand{\tema}{A história da filosofia como desenvolvimento da ideia}
-%\newcommand{\turma}{1º Periodo}
-%% \newcommand{\data}{28/05/2014}
-%\newcommand{\tempodeaula}{30 minutos}
 
 
 % ---
 % Configurações de aparência do PDF final
+
+%
+%\definecolor{figcolor}{rgb}{1,0.4,0}  % orange
+%\definecolor{tabcolor}{rgb}{1,0.4,0}  % orange
+%\definecolor{eqncolor}{rgb}{1,0.4,0}  % orange
+%\definecolor{linkcolor}{rgb}{1,0.4,0}  % orange
+%\definecolor{citecolor}{rgb}{1,0.4,0}  % orange
+%\definecolor{seccolor}{rgb}{0,0,1}  % blue
+%\definecolor{abscolor}{rgb}{0,0,1}  % blue
+%\definecolor{titlecolor}{rgb}{0,0,1}  % blue
+%\definecolor{biocolor}{rgb}{0,0,1}  % blue
 
 % alterando o aspecto da cor azul
 \definecolor{blue}{RGB}{41,5,195}
@@ -243,21 +135,61 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % informações do PDF
 \makeatletter
 \hypersetup{
-     	%pagebackref=true,
-		pdftitle={\@title}, 
-		pdfauthor={\@author},
-    	pdfsubject={\imprimirpreambulo},
-	    pdfcreator={LaTeX with abnTeX2},
-		pdfkeywords={abnt}{latex}{abntex}{abntex2}{relatório técnico}, 
-		colorlinks=true,       		% false: boxed links; true: colored links
-    	linkcolor=blue,          	% color of internal links
-    	citecolor=blue,        		% color of links to bibliography
-    	filecolor=magenta,      		% color of file links
-		urlcolor=blue,
-		bookmarksdepth=4
+	%pagebackref=true,
+	pdftitle={\@title}, 
+	pdfauthor={Autores},
+	pdfsubject={Relatório Técnico},
+	pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{UFSC}{abntex2}{tese}{INEP}, 
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=linkcolor,          	% color of internal links
+	citecolor=citecolor,        		% color of links to bibliography
+	filecolor=black,      		% color of file links
+	urlcolor=linkcolor,
+	bookmarksdepth=4
 }
 \makeatother
 % --- 
+
+
+
+% ---
+% Estilo de capítulos
+%
+%\chapterstyle{default}
+% \chapterstyle{pedersen} 
+%\chapterstyle{lyhne} 
+%\chapterstyle{madsen} 
+% \chapterstyle{veelo} 
+%\chapterstyle{companion}
+
+%\chapterstyle{thatcher}
+%\chapterstyle{verville}
+
+\chapterstyle{VZ14} % Ver classe para maiores detalhes
+
+
+%
+% Veja outros estilos em:
+% http://www.tex.ac.uk/tex-archive/info/MemoirChapStyles/MemoirChapStyles.pdf
+% ---
+
+% http://tex.stackexchange.com/questions/228936/setting-entries-of-list-of-listings-in-latex-package-listings
+\newlength\mylen
+
+\begingroup
+\makeatletter
+\let\newcounter\@gobble\let\setcounter\@gobbletwo
+\globaldefs\@ne \let\c@loldepth\@ne
+\newlistof{listings}{lol}{\lstlistlistingname}
+\newlistentry{lstlisting}{lol}{0}
+\makeatother
+\endgroup
+
+\renewcommand\cftlstlistingpresnum{\lstlistingname~}
+\settowidth\mylen{\cftlstlistingpresnum\cftlstlistingaftersnum}
+\addtolength\cftlstlistingnumwidth{\mylen} %
+\renewcommand\cftlstlistingaftersnum{\hfill\textendash\hfill}
 
 
 % --- 
@@ -275,6 +207,22 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % ---
 \makeindex
 % ---
+
+
+%\includeonly{PreTexto/fichacatalografica}
+%\includeonly{PreTexto/agradecimentos}
+%\includeonly{PreTexto/resumos}
+%\includeonly{PreTexto/siglas}
+%\includeonly{PreTexto/simbolos}
+%
+%\includeonly{Capitulos/00/CH00}
+%\includeonly{Capitulos/01/CH01}
+%\includeonly{Capitulos/02/CH02}
+%\includeonly{Capitulos/03/CH03}
+%\includeonly{Capitulos/04/CH04}
+
+
+
 
 % ----
 % Início do documento
@@ -309,52 +257,11 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % \imprimirfolhaderosto
 % ---
 
-% ---
-% Anverso da folha de rosto:
-% ---
-%
-%{
-%\ABNTEXchapterfont
-%
-%\vspace*{\fill}
-%
-%Conforme a ABNT NBR 10719:2011, seção 4.2.1.1.1, o anverso da folha de rosto
-%deve conter:
-%
-%\begin{alineas}
-%  \item nome do órgão ou entidade responsável que solicitou ou gerou o
-%   relatório; 
-%  \item título do projeto, programa ou plano que o relatório está relacionado;
-%  \item título do relatório;
-%  \item subtítulo, se houver, deve ser precedido de dois pontos, evidenciando a
-%   sua subordinação ao título. O relatório em vários volumes deve ter um título
-%   geral. Além deste, cada volume pode ter um título específico; 
-%  \item número do volume, se houver mais de um, deve constar em cada folha de
-%   rosto a especificação do respectivo volume, em algarismo arábico; 
-%  \item código de identificação, se houver, recomenda-se que seja formado
-%   pela sigla da instituição, indicação da categoria do relatório, data,
-%   indicação do assunto e número sequencial do relatório na série; 
-%  \item classificação de segurança. Todos os órgãos, privados ou públicos, que
-%   desenvolvam pesquisa de interesse nacional de conteúdo sigiloso, devem
-%    informar a classificação adequada, conforme a legislação em vigor; 
-%  \item nome do autor ou autor-entidade. O título e a qualificação ou a função
-%   do autor podem ser incluídos, pois servem para indicar sua autoridade no
-%   assunto. Caso a instituição que solicitou o relatório seja a mesma que o
-%   gerou, suprime-se o nome da instituição no campo de autoria; 
-%  \item local (cidade) da instituição responsável e/ou solicitante; NOTA: No
-%   caso de cidades homônimas, recomenda-se o acréscimo da sigla da unidade da
-%   federação.
-%  \item ano de publicação, de acordo com o calendário universal (gregoriano),
-%  deve ser apresentado em algarismos arábicos.
-%\end{alineas}
-%
-%\vspace*{\fill}
-%}
 
 % ---
 % Agradecimentos
 % ---
-\input{PreTexto/agradecimentos.tex}
+%\input{PreTexto/agradecimentos.tex}
 % ---
 
 % ---
@@ -364,7 +271,7 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % resumo na língua vernácula (obrigatório)
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 
-\input{PreTexto/resumos.tex}
+\input{PreTexto/resumos}
 
 % ---
 
@@ -396,13 +303,13 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % ---
 % inserir lista de abreviaturas e siglas
 % ---
-\input{PreTexto/siglas.tex}
+\input{PreTexto/siglas}
 % ---
 
 % ---
 % inserir lista de símbolos
 % ---
-\input{PreTexto/simbolos.tex}
+\input{PreTexto/simbolos}
 % ---
 
 
@@ -419,8 +326,11 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % ----------------------------------------------------------
 % ELEMENTOS TEXTUAIS
 % ----------------------------------------------------------
+
 \textual
 
+%\textualINEPUFSC
+
 % ----------------------------------------------------------
 % Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
 % ----------------------------------------------------------
@@ -428,7 +338,7 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % ----------------------------------------------------------
 % Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
 % ----------------------------------------------------------
-\input{Capitulos/00/CH00.tex}
+\include{Capitulos/00/CH00}
 
 
 
@@ -441,7 +351,7 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % Capitulo com exemplos de comandos inseridos de arquivo externo 
 % ----------------------------------------------------------
 
-\input{Capitulos/01/CH01.tex}
+\include{Capitulos/01/CH01}
 %\include{abntex2-modelo-include-comandos}
 
 
@@ -454,7 +364,7 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % ---
 % Capitulo de revisão de literatura
 % ---
-\input{Capitulos/02/CH02.tex}
+\include{Capitulos/02/CH02}
 % ---
 
 % ---
@@ -468,7 +378,7 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % Conclusão
 % ---
 
-\input{Capitulos/Concl/Concl.tex}
+\include{Capitulos/Concl/Concl}
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
@@ -478,6 +388,9 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
+
+\bibliographystyle{abnt-alf}
+%\bibliographystyle{abnt-num}
 \bibliography{abntex2-modelo-references}
 
 % ----------------------------------------------------------
@@ -500,9 +413,9 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % Imprime uma página indicando o início dos apêndices
 \partapendices
 
-\input{Apendices/A/APA.tex}
-\input{Apendices/B/APB.tex}
-\input{Apendices/C/APC.tex}
+\include{Apendices/A/APA}
+\include{Apendices/B/APB}
+\include{Apendices/C/APC}
 
 \end{apendicesenv}
 % ---
@@ -520,9 +433,9 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % Imprime uma página indicando o início dos anexos
 \partanexos
 
-\input{Anexos/A/ANA.tex}
-\input{Anexos/B/ANB.tex}
-\input{Anexos/C/ANC.tex}
+\include{Anexos/A/ANA}
+\include{Anexos/B/ANB}
+\include{Anexos/C/ANC}
 
 \end{anexosenv}
 
@@ -538,54 +451,5 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 \printindex
 
 
-%---------------------------------------------------------------------
-% Formulário de Identificação (opcional)
-%---------------------------------------------------------------------
-\chapter*[Formulário de Identificação]{Formulário de Identificação}
-\addcontentsline{toc}{chapter}{Exemplo de Formulário de Identificação}
-\label{formulado-identificacao}
-
-Exemplo de Formulário de Identificação, compatível com o Anexo A (informativo)
-da ABNT NBR 10719:2011. Este formulário não é um anexo. Conforme definido na
-norma, ele é o último elemento pós-textual e opcional do relatório.
-
-\bigskip
-
-\begin{tabular}{|p{9cm}|p{5cm}|}
-\hline
-\multicolumn{2}{|c|}{\textbf{\large Dados do Relatório Técnico e/ou científico}}\\
-\hline
-\multirow{4}{10cm}[24pt]{Título e subtítulo}& Classificação de segurança\\
-                   & \\
-                   \cline{2-2}
-                   & No.\\
-                   & \\
-				
-\hline
-Tipo de relatório & Data\\
-\hline
-Título do projeto/programa/plano & No.\\
-\hline
-\multicolumn{2}{|l|}{Autor(es)} \\
-\hline
-\multicolumn{2}{|l|}{Instituição executora e endereço completo} \\
-\hline
-\multicolumn{2}{|l|}{Instituição patrocinadora e endereço completo} \\
-\hline
-\multicolumn{2}{|l|}{Resumo}\\[3cm]
-\hline
-\multicolumn{2}{|l|}{Palavras-chave/descritores}\\
-\hline
-\multicolumn{2}{|l|}{
-Edição \hfill No. de páginas \hfill No. do volume \hfill Nº de classificação \phantom{XXXX}} \\
-\hline
-\multicolumn{2}{|l|}{
-ISSN \hfill \hfill Tiragem \hfill Preço \phantom{XXXXXXXX}} \\
-\hline
-\multicolumn{2}{|l|}{Distribuidor} \\
-\hline
-\multicolumn{2}{|l|}{Observações/notas}\\[3cm]
-\hline
-\end{tabular}
 
 \end{document}
