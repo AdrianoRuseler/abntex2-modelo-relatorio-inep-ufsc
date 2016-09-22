@@ -1,7 +1,7 @@
 \changetocdepth {4}
 \select@language {brazil}
 \select@language {brazil}
-\contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o}{17}{chapter*.6}
+\contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o}{17}{chapter*.8}
 \contentsline {part}{\partnumberline {I}Prepara\IeC {\c c}\IeC {\~a}o do relat\IeC {\'o}rio}{19}{part.1}
 \contentsline {chapter}{\chapternumberline {1}Resultados de comandos}{21}{chapter.1}
 \precistoctext {Isto \IeC {\'e} uma sinopse de cap\IeC {\'\i }tulo. A ABNT n\IeC {\~a}o traz nenhuma normatiza\IeC {\c c}\IeC {\~a}o a respeito desse tipo de resumo, que \IeC {\'e} mais comum em romances e livros t\IeC {\'e}cnicos.}
@@ -11,7 +11,7 @@
 \select@language {brazil}
 \contentsline {section}{\numberline {1.3}Notas de rodap\IeC {\'e}}{22}{section.1.3}
 \contentsline {section}{\numberline {1.4}Tabelas}{22}{section.1.4}
-\contentsline {section}{\numberline {1.5}Figuras}{23}{section.1.5}
+\contentsline {section}{\numberline {1.5}Figuras}{22}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}Figuras em \emph {minipages}}{24}{subsection.1.5.1}
 \contentsline {section}{\numberline {1.6}Express\IeC {\~o}es matem\IeC {\'a}ticas}{25}{section.1.6}
 \contentsline {section}{\numberline {1.7}Enumera\IeC {\c c}\IeC {\~o}es: al\IeC {\'\i }neas e subal\IeC {\'\i }neas}{25}{section.1.7}
@@ -20,7 +20,7 @@
 \contentsline {section}{\numberline {1.10}Inclus\IeC {\~a}o de outros arquivos}{27}{section.1.10}
 \contentsline {section}{\numberline {1.11}Compilar o documento \LaTeX }{28}{section.1.11}
 \contentsline {section}{\numberline {1.12}Remiss\IeC {\~o}es internas}{28}{section.1.12}
-\contentsline {section}{\numberline {1.13}Divis\IeC {\~o}es do documento: se\IeC {\c c}\IeC {\~a}o}{29}{section.1.13}
+\contentsline {section}{\numberline {1.13}Divis\IeC {\~o}es do documento: se\IeC {\c c}\IeC {\~a}o}{28}{section.1.13}
 \contentsline {subsection}{\numberline {1.13.1}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{29}{subsection.1.13.1}
 \contentsline {subsubsection}{\numberline {1.13.1.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{29}{subsubsection.1.13.1.1}
 \contentsline {subsubsection}{\numberline {1.13.1.2}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{29}{subsubsection.1.13.1.2}
@@ -29,7 +29,7 @@
 \contentsline {paragraph}{\numberline {1.13.2.1.1}Esta \IeC {\'e} uma subse\IeC {\c c}\IeC {\~a}o de quinto n\IeC {\'\i }vel}{29}{paragraph.1.13.2.1.1}
 \contentsline {paragraph}{\numberline {1.13.2.1.2}Esta \IeC {\'e} outra subse\IeC {\c c}\IeC {\~a}o de quinto n\IeC {\'\i }vel}{29}{paragraph.1.13.2.1.2}
 \contentsline {paragraph}{\numberline {1.13.2.1.3}Este \IeC {\'e} um par\IeC {\'a}grafo numerado}{29}{paragraph.1.13.2.1.3}
-\contentsline {paragraph}{\numberline {1.13.2.1.4}Esta \IeC {\'e} outro par\IeC {\'a}grafo numerado}{30}{paragraph.1.13.2.1.4}
+\contentsline {paragraph}{\numberline {1.13.2.1.4}Esta \IeC {\'e} outro par\IeC {\'a}grafo numerado}{29}{paragraph.1.13.2.1.4}
 \contentsline {section}{\numberline {1.14}Este \IeC {\'e} um exemplo de nome de se\IeC {\c c}\IeC {\~a}o longo. Ele deve estar alinhado \IeC {\`a} esquerda e a segunda e demais linhas devem iniciar logo abaixo da primeira palavra da primeira linha}{30}{section.1.14}
 \contentsline {section}{\numberline {1.15}Diferentes idiomas e hifeniza\IeC {\c c}\IeC {\~o}es}{30}{section.1.15}
 \contentsline {section}{\numberline {1.16}Consulte o manual da classe \textsf {abntex2}}{32}{section.1.16}
@@ -37,16 +37,15 @@
 \contentsline {subsection}{\numberline {1.17.1}Acentua\IeC {\c c}\IeC {\~a}o de refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{32}{subsection.1.17.1}
 \contentsline {section}{\numberline {1.18}Precisa de ajuda?}{32}{section.1.18}
 \contentsline {section}{\numberline {1.19}Voc\IeC {\^e} pode ajudar?}{33}{section.1.19}
-\contentsline {section}{\numberline {1.20}Quer customizar os modelos do abnT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m 2\ para sua institui\IeC {\c c}\IeC {\~a}o ou universidade?}{33}{section.1.20}
+\contentsline {section}{\numberline {1.20}Quer customizar os modelos do abnT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}2\ para sua institui\IeC {\c c}\IeC {\~a}o ou universidade?}{33}{section.1.20}
 \contentsline {part}{\partnumberline {II}Resultados}{35}{part.2}
 \contentsline {chapter}{\chapternumberline {2}Lorem ipsum dolor sit amet}{37}{chapter.2}
 \contentsline {section}{\numberline {2.1}Aliquam vestibulum fringilla lorem}{37}{section.2.1}
-\contentsline {chapter}{Conclus\IeC {\~a}o}{39}{chapter*.16}
+\contentsline {chapter}{Conclus\IeC {\~a}o}{39}{chapter*.18}
 \vspace {\cftbeforepartskip }
 \vspace {\cftbeforepartskip }
-\contentsline {chapter}{Refer\^encias}{41}{section*.19}
+\contentsline {chapter}{Refer\^encias}{41}{section*.21}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {part}{Ap\^endices}{43}{section*.20}
 \contentsline {appendix}{\chapternumberline {A}Morbi ultrices rutrum lorem. (encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{}) }{45}{appendix.A}
 \contentsline {section}{\numberline {A.1}Some encoding tests}{45}{section.A.1}
 \contentsline {subsection}{\numberline {A.1.1}(encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{}) }{45}{subsection.A.1.1}
@@ -64,7 +63,6 @@
 \contentsline {paragraph}{\numberline {C.1.1.1.1}(encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{}) }{49}{paragraph.C.1.1.1.1}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
-\contentsline {part}{Anexos}{51}{section*.21}
 \contentsline {appendix}{\chapternumberline {A}Quisque libero justo}{53}{appendix.anexochapback.1}
 \contentsline {section}{\numberline {A.1}Some encoding tests}{53}{section.anexochapback.1.1}
 \contentsline {subsection}{\numberline {A.1.1}(encoding: T1{}, family: cmr{}, series: m{}, shape: n{}, size: 12{}, baseline: 14.5pt{}) }{53}{subsection.anexochapback.1.1.1}

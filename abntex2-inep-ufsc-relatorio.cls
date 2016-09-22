@@ -85,6 +85,15 @@
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 
+\definecolor{figcolor}{rgb}{0,0,0}  % black
+\definecolor{tabcolor}{rgb}{0,0,0}  % black
+\definecolor{eqncolor}{rgb}{0,0,0}  % black
+\definecolor{seccolor}{rgb}{0,0,0}  % black
+\definecolor{abscolor}{rgb}{0,0,0}  % black
+\definecolor{linkcolor}{rgb}{0,0,0}  % black
+\definecolor{citecolor}{rgb}{0,0,0}  % black
+\definecolor{titlecolor}{rgb}{0,0,0}  % black
+\definecolor{biocolor}{rgb}{0,0,0}  % black
 \lstset{ %
 	aboveskip=3mm,
 	belowskip=3mm,
@@ -326,6 +335,9 @@
 \setlength\midchapskip{10pt}
 \makechapterstyle{VZ14}{
 	%	\thispagestyle{empty}
+\setlength\beforechapskip{50pt}
+\setlength\midchapskip{20pt}
+\setlength\afterchapskip{20pt}
 	\renewcommand\chapternamenum{}
 	\renewcommand\printchaptername{}
 	\renewcommand\chapnamefont{\Huge\scshape}
@@ -349,6 +361,14 @@
 % http://www.tex.ac.uk/tex-archive/info/MemoirChapStyles/MemoirChapStyles.pdf
 
 
+
+
+\renewenvironment{resumo}[1][\resumoname]{%
+   \PRIVATEbookmarkthis{#1}
+ %  \renewcommand{\abstractnamefont}{\chaptitlefont}
+ %  \renewcommand{\abstractname}{\ABNTEXchapterupperifneeded{#1}}
+  \pretextualchapter{#1}
+  }{\PRIVATEclearpageifneeded}
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
 % Configura layout
@@ -412,7 +432,23 @@
 }
 
 
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% Comandos e ambientes de editoracao APENDICES e ANEXOS
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
 
+
+% ---
+% Imprime uma pagina de divisao no estilo parte
+\renewcommand{\partpage}{%
+  \cleardoublepage
+ %\phantomsection
+ % \addcontentsline{toc}{part}{\appendixtocname}%
+  \appendixpage*
+}
+
+	
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
 % IMPRESSOES PADROES DE CAPA E FOLHA DE ROSTO
