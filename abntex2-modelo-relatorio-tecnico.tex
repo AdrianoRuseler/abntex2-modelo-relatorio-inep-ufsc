@@ -35,8 +35,9 @@
 	twoside,			% para impressão em verso e anverso. Oposto a oneside
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
-	sumario=tradicional,
+%	sumario=tradicional,
 %	sumario=abnt-6027-2012, %  soh pode ser usado com memoir v3.6k ou superior
+	sumario=UFSC,
 	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
 	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
 	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
@@ -57,9 +58,9 @@
 % ---
 
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
-%\usepackage[alf]{abntex2cite}	% Citação alfabética por autor-data [alf]
-\usepackage[num]{abntex2cite} % Citação numérica [num]
-\citebrackets[]
+\usepackage[alf]{abntex2cite}	% Citação alfabética por autor-data [alf]
+%\usepackage[num]{abntex2cite} % Citação numérica [num]
+%\citebrackets[]
 
 % --- 
 % CONFIGURAÇÕES DE PACOTES
@@ -198,6 +199,10 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % Espaçamentos entre linhas e parágrafos 
 % --- 
 
+\setlength\beforechapskip{10pt}
+\setlength\midchapskip{15pt}
+\setlength\afterchapskip{15pt}
+
 % O tamanho do parágrafo é dado por:
 \setlength{\parindent}{1.3cm}
 
@@ -246,7 +251,7 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % ---
 % Capa
 % ---
-\imprimircapaUFSC  % Aplica o modelo com logo da UFSC
+%\imprimircapaUFSC  % Aplica o modelo com logo da UFSC
 %\imprimircapa % Aplica o modelo default do pacote abntex2
 % ---
 
@@ -331,6 +336,10 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 
 \textual
 
+\setlength\beforechapskip{50pt}
+\setlength\midchapskip{20pt}
+\setlength\afterchapskip{20pt}
+
 %\textualINEPUFSC
 
 % ----------------------------------------------------------
@@ -391,6 +400,9 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % Referências bibliográficas
 % ----------------------------------------------------------
 
+\setlength\beforechapskip{0pt}
+\setlength\midchapskip{15pt}
+\setlength\afterchapskip{15pt}
 
 \bibliography{abntex2-modelo-references}
 
@@ -414,6 +426,10 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % Imprime uma página indicando o início dos apêndices
 \partapendices
 
+	\setlength\beforechapskip{50pt}
+	\setlength\midchapskip{20pt}
+	\setlength\afterchapskip{20pt}
+
 \include{Apendices/A/APA}
 \include{Apendices/B/APB}
 \include{Apendices/C/APC}
@@ -434,6 +450,10 @@ com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % Imprime uma página indicando o início dos anexos
 \partanexos
 
+	\setlength\beforechapskip{50pt}
+	\setlength\midchapskip{20pt}
+	\setlength\afterchapskip{20pt}
+	
 \include{Anexos/A/ANA}
 \include{Anexos/B/ANB}
 \include{Anexos/C/ANC}
